@@ -1,0 +1,61 @@
+//- index.pug
+doctype html
+html
+  head
+    title shubham Dance academy
+    style
+      include ../static/style.css
+  body 
+    nav#navbar
+        ul
+           div#logo
+            img(src="/static/logo.jpg" height="60px")
+            | SDA
+            li #[a(href ="/") Home]
+            li #[a(href ="/") about]
+            li #[a(href ="/") Services]
+            li #[a(href ="/") Class info]
+            li #[a(href ="/") Contact us ]
+
+    section#introSection
+        div Welcome to our dance academy 
+        div.s1 Eat Dance Sleep Repeat 
+    section#missioSection
+        h2 Our mission section    
+        div.card
+            h3 Dance perfection 
+              div.card-box
+                div.card-img
+                  img(src="/static/i1.jpeg"   height="40px")
+                div.card-content 
+                  p This is our dance academy 
+        div.card
+            h3 Dance pewrfection
+              div.card-box
+                div.card-img
+                  img(src="/static/i2.png"  height="40px" )
+                div.card-content 
+                  p This is our dance academy 
+        div.card
+            h3 Dance pewrfection
+              div.card-box
+                div.card-img
+                  img(src="/static/i3.png"   height="40px")
+                div.card-content 
+                  p This is our dance academy       
+    section#sponsorSection
+        h2  Our Sponsors 
+
+        div#sponsor 
+          img(src="/static/logo1.png", alt="", class="img")
+
+          img(src="/static/logo2.png", alt="", class="img")
+
+          img(src="/static/logo3.png", alt="", class="img")
+
+          img(src="/static/logo4.png", alt="", class="img")
+
+    footer#footer
+        |  Copyright @ 2020 Shubham Dance Academy .All rights reserved           
+    script
+      include ../static/index.js
